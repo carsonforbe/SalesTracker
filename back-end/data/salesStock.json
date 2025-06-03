@@ -1,0 +1,32 @@
+{
+    "Gas": [
+      {
+        "id": 1747562482258,
+        "productType": "Gas",
+        "amountSold": 2,
+        "wholesalePrice": 1000,
+        "retailPrice": 1250,
+        "profit": -500
+      }
+    ],
+    "CrudeOil": [
+      {
+        "id": 1747562557272,
+        "productType": "CrudeOil",
+        "amountSold": 15,
+        "wholesalePrice": 350,
+        "retailPrice": 390,
+        "profit": -600
+      }
+    ],
+    "Petrol": [
+      {
+        "id": 1747593325073,
+        "productType": "Petrol",
+        "amountSold": 173,
+        "wholesalePrice": 175,
+        "retailPrice": 200,
+        "profit": -4325
+      }
+    ]
+  }

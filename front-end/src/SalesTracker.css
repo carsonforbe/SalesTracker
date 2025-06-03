@@ -1,0 +1,204 @@
+/* SalesTracker.css */
+.sales-tracker {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .sales-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .sales-container {
+      flex-direction: row;
+    }
+  }
+  
+  .sales-form {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .sales-form:hover {
+    transform: translateY(-5px);
+  }
+  
+  .sales-display {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .sales-display:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+  }
+  
+  button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #2980b9, #3498db);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
+  }
+  
+  .btn-edit {
+    background: linear-gradient(90deg, #f39c12, #e67e22);
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background: linear-gradient(90deg, #e67e22, #f39c12);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+  }
+  
+  .btn-delete {
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background: linear-gradient(90deg, #c0392b, #e74c3c);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+  }
+  
+  .type-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .type-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: #ecf0f1;
+    color: #34495e;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .type-btn.active {
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    color: white;
+  }
+  
+  .type-btn:hover:not(.active) {
+    background: #bdc3c7;
+    transform: translateY(-2px);
+  }
+  
+  .sales-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sales-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid #3498db;
+  }
+  
+  .sales-item:hover {
+    background: #e8f4fc;
+    transform: translateX(5px);
+  }
+  
+  .sales-info {
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  .sales-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  /* Animation for empty state */
+  .empty-state svg {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
